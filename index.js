@@ -3,7 +3,9 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello World Again!");
+  res.send(
+    "Hello World! Testing development environment from container with nodemon!"
+  );
 });
 
 app.listen(3000, () => {

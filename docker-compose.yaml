@@ -1,0 +1,9 @@
+services:
+  api:
+    build: .
+    command: "pnpm run dev --legacy-watch"
+    ports:
+      - "5000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
